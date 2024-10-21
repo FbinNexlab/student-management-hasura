@@ -6,3 +6,13 @@ definition:
     rootPath: .
   includePaths:
     - metadata
+  envMapping:
+    APP_NODE_CONNECTOR_AUTHORIZATION_HEADER:
+      fromEnv: APP_NODE_CONNECTOR_AUTHORIZATION_HEADER
+    APP_NODE_CONNECTOR_READ_URL:
+      fromEnv: APP_NODE_CONNECTOR_READ_URL
+    APP_NODE_CONNECTOR_WRITE_URL:
+      fromEnv: APP_NODE_CONNECTOR_WRITE_URL
+  connectors:
+    - path: connector/node_connector/connector.yaml
+      connectorLinkName: node_connector
